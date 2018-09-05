@@ -11,15 +11,15 @@ int main()
 	double maturity = 0;
 	int maturityPackage = 0;
 
-	// Below are the package options
-
-	cout<<"Interest Rate: 3%"<<endl;
+	// Below are the package options with select rates
+	
+	cout<<"Package #1 - Interest Rate: 3%"<<endl;
 	cout<<"Maturity Date: 3 Months"<<endl;
 	cout<<"---------------"<<endl;
-	cout<<"Interest Rate: 6%"<<endl;
+	cout<<"Package #2 - Interest Rate: 6%"<<endl;
 	cout<<"Maturity Date: 6 Months"<<endl;
 	cout<<"---------------"<<endl;
-	cout<<"Interest Rate: 9%"<<endl;
+	cout<<"Package #3 - Interest Rate: 9%"<<endl;
 	cout<<"Maturity Date: 12 Months"<<endl;
 	cout<<"---------------"<<endl;
 
@@ -30,9 +30,8 @@ int main()
 	cout<<"Plesae select the Maturity package you want to select: "<<endl;
 	cin>>maturityPackage;
 
-	if(maturityPackage == 1)
+	if(maturityPackage == 1) // package 1 selected
 	{
-
 		maturity = initialInvestment + initialInvestment*(0.03);
 		cout<<"Month 1: $"<<maturity<<endl;
 		maturity = maturity + maturity*(0.03);
@@ -47,7 +46,7 @@ int main()
 
 	}
 
-	else if(maturityPackage == 2)
+	else if(maturityPackage == 2) // package 2 selected
 	{
 
 		maturity = initialInvestment + initialInvestment*(0.06);
@@ -69,7 +68,7 @@ int main()
 		cout<<"Maturity after 6 months: $"<<maturity<<endl;
 	}
 
-	else if (maturityPackage == 3)
+	else if (maturityPackage == 3) // package 3 selected
 	{
 
 		maturity = initialInvestment + initialInvestment*(0.09);
